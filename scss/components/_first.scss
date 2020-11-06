@@ -147,12 +147,11 @@
             font-size: 20px;
             line-height: 22px;
             text-transform: uppercase;
-            color: #fff;
+            color: var(--white-color);
             background: #21222f;
 
             &:hover {
-                background: #fff;
-                color: #21222f;
+                color: var(--green-color);
             }
         }
     }

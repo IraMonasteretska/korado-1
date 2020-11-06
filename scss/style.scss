@@ -1,9 +1,12 @@
-// Components 
-@import "components/first";
-@import "components/matching";
-
 @import "normalize";
 @import "overall";
 @import "vars";
 @import "fonts";
+
+/* Components  */
+@import "components/first";
+@import "components/matching";
+@import "components/colors";
+
+/* Media queries */
 @import "media";

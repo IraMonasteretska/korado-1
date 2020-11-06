@@ -1,21 +1,23 @@
-/* matching */
 .matching {
     position: relative;
 }
+
 .top {
-	height: 127px;
-	background: #21222f;
+    height: 127px;
+    background: #21222f;
 }
+
 .gallery {
-	width: 100%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .gallery__item {
     position: relative;
     overflow: hidden;
+
     &:hover {
         cursor: pointer;
     }
@@ -27,11 +29,11 @@
 }
 
 .gallery__item {
-   width: 33.33333%; 
+    width: 33.33333%;
 }
 
 .gallery__item img {
-	object-fit: cover;
+    object-fit: cover;
     height: calc(100vh - 127px);
     transition: transform .5s ease-out;
     width: 100%;
@@ -41,6 +43,7 @@
     content: "";
     display: block;
     background: url('../img/romb.svg') no-repeat center center;
+    background-size: contain;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -57,44 +60,46 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
 .gallery__content {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     z-index: 5;
 }
 
 .gallery__title {
-	text-align: center;
+    text-align: center;
     font-weight: 800;
-    font-size: calc(18px + 16 * (100vw / 1920));
-	line-height: 150%;
-	text-transform: uppercase;
-	color: #21222F;
-	text-shadow: 1px 0px 7px rgba(0, 0, 0, 0.15);
-	margin: 0 auto 36px;
-	width: 320px;
+    font-size: calc(16px + 18 * (100vw / 1920));
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #21222F;
+    text-shadow: 1px 0px 7px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    margin-bottom: 2%;
+    width: 65%;
 }
 
 .gallery__btn {
-	border: 2px solid #21222F;
-	filter: drop-shadow(5px 0px 20px rgba(33, 34, 47, 0.15));
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 22px;
-	text-transform: uppercase;
-	color: #21222F;
-	text-shadow: 1px 0px 7px rgba(0, 0, 0, 0.15);
-	width: 227px;
-	padding: 15px 0 14px;
-	display: block;
+    border: 2px solid #21222F;
+    filter: drop-shadow(5px 0px 20px rgba(33, 34, 47, 0.15));
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #21222F;
+    text-shadow: 1px 0px 7px rgba(0, 0, 0, 0.15);
+    width: 227px;
+    padding: 15px 0 14px;
+    display: block;
     margin: 0 auto;
+
     &:hover {
         background: var(--dark-color);
         color: var(--white-color);
@@ -102,7 +107,7 @@
 }
 
 .matching-container {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .breadcrumbs {
@@ -113,6 +118,8 @@
     display: flex;
     align-items: center;
     margin-top: 38px;
+    pointer-events: none;
+
     &__text {
         font-weight: 500;
         font-size: 16px;
@@ -122,14 +129,17 @@
         padding-left: 20px;
         margin-left: 15px;
         background: url('../img/arrow.svg') no-repeat left center;
+
     }
+
     &__home {
         width: 20px;
         height: 20px;
         background: url('../img/home.svg') no-repeat center;
         left: 0;
         top: 0;
+        flex-shrink: 0;
+        z-index: 20;
+        pointer-events: visible;
     }
 }
-
-
