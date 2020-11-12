@@ -2,6 +2,9 @@
 	.gallery__btn {
 		width: 45%;
 	}
+	.colors__text {
+		font-size: calc(11px + 7 * (100vw / 1920));
+	}
 }
 
 @media screen and (max-width: 1200px) {

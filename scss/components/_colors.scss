@@ -59,17 +59,19 @@
     }
 
     &__text {
+        display: block;
         font-weight: 700;
         line-height: 1.8;
         text-align: center;
         text-transform: uppercase;
         color: var(--dark-color);
-        width: 65%;
+        width: 63%;
         margin: 0 auto;
-        font-size: calc(12px + 8 * (100vw / 1920));
+        font-size: calc(12px + 7 * (100vw / 1920));
 
         &:hover {
             font-weight: 900;
+            width: calc(63% + 10px);
         }
     }
 }

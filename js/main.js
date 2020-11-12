@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 	/***  Section Colors start  ***/
 
-	$( ".text__radiator" ).click( function() {
+	$( ".text__radiator" ).mouseenter( function() {
 		if ($("#romb-one").css('transform') == 'none') {
 		  $("#romb-one").css({'transform': 'rotate(-180deg)'});
 		} else {
@@ -18,7 +18,7 @@ $(document).ready(function(){
 		};
 	});
 
-	$( ".text__towel" ).click( function() {
+	$( ".text__towel" ).mouseenter( function() {
 		if ($("#romb-two").css('transform') == 'none') {
 		  $("#romb-two").css({'transform': 'rotate(-180deg)'});
 		} else {
@@ -26,7 +26,7 @@ $(document).ready(function(){
 		};
 	});
 
-	$( ".text__multicolored" ).click( function() {
+	$( ".text__multicolored" ).mouseenter( function() {
 		if ($("#romb-three").css('transform') == 'none') {
 		  $("#romb-three").css({'transform': 'rotate(-180deg)'});
 		} else {
@@ -34,32 +34,47 @@ $(document).ready(function(){
 		};
 	});
 
-	$(".colors__text--one").click(function(){
+	$(".colors__text--one").mouseenter(function(){
 		$('.radiators').hide();
 		$('#rad1').show();		
 	});
 
-	$(".colors__text--two").click(function(){
+	$(".colors__text--two").mouseenter(function(){
 		$('.radiators').hide();
 		$('#rad2').show();		
 	});
 
-	$(".colors__text--three").click(function(){
+	$(".colors__text--three").mouseenter(function(){
 		$('.radiators').hide();
 		$('#rad3').show();		
 	});
 
-	$(".towel-1").click(function(){
+	$(".towel-1").mouseenter(function(){
 		$('.towels').hide();
 		$('#towel1').show();		
 	});
 
-	$(".towel-2").click(function(){
+	$(".towel-2").mouseenter(function(){
 		$('.towels').hide();
 		$('#towel2').show();		
 	});
 
+	$(".gallery__btn").mouseenter(function(){
+		$(this).parent().parent().addClass('rotate');	
+	});
+
+	$(".gallery__btn").mouseleave(function(){
+		$(this).parent().parent().removeClass('rotate');
+	});
+
+
 	/***  Section Colors finish  ***/
+
+	$('.social__btn').click(function () {
+        $('.social__item').fadeToggle();
+		$('.social__close').toggle();
+		$('.social__message').toggle();
+	});
 	
 	
 
