@@ -50,56 +50,67 @@
     &__telegram {
         circle {
             fill: #0087D0;
+            transition: fill 0.3s ease;
         }
 
         &:hover circle {
             fill: #0079BA;
+            transition: fill 0.3s ease;
         }
     }
 
     &__whatsapp {
         circle {
             fill: #5fb34e;
+            transition: fill 0.3s ease;
         }
 
         &:hover circle {
             fill: #57A547;
+            transition: fill 0.3s ease;
         }
     }
 
     &__viber {
         circle {
             fill: #935bbe;
+            transition: fill 0.3s ease;
         }
 
         &:hover circle {
             fill: #8b4cbb;
+            transition: fill 0.3s ease;
         }
     }
 
     &__phone {
         circle {
             fill: #2a2b3a;
+            transition: fill 0.3s ease;
         }
 
         &:hover circle {
             fill: #14141f;
+            transition: fill 0.3s ease;
         }
     }
 
     &__phone {
         circle {
             fill: #2a2b3a;
+            transition: fill 0.3s ease;
         }
 
         &:hover circle {
             fill: #14141f;
+            transition: fill 0.3s ease;
         }
     }
 
     &__close {
         path {
             fill: #21222F;
+            transition: fill 0.3s ease;
         }
 
         circle {
@@ -108,26 +119,31 @@
 
         &:hover path {
             fill: #5fb34e;
+            transition: fill 0.3s ease;
         }
     }
 
     &__message {
         circle {
             fill: #2a2b3a;
+            transition: fill 0.3s ease;
         }
 
         &:hover circle {
             fill: #14141f;
+            transition: fill 0.3s ease;
         }
     }
 
     &__up {
         circle {
             fill: #2a2b3a;
+            transition: fill 0.3s ease;
         }
 
         &:hover circle {
             fill: #14141f;
+            transition: fill 0.3s ease;
         }
     }
 }

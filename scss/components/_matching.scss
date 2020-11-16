@@ -102,11 +102,13 @@
     padding: 15px 0 14px;
     display: block;
     margin: 0 auto;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color  0.3s ease;
 
     &:hover {
-        background: var(--dark-color);
+        background-color: var(--dark-color);
         color: var(--white-color);
-        
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 }
 

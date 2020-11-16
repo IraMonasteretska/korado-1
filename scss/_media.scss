@@ -75,7 +75,7 @@
 		text-align: center;
 		position: fixed;
 		display: block;
-		top: -100%;
+		transform: translateY(-100%);
 		left: 0;
 		height: 100%;
 		width: 100%;
@@ -84,12 +84,12 @@
 		font-size: 40px;
 		line-height: 40px;
 		z-index: -1;
-		transition: top 0.3s ease 0s;
+		transition: transform 0.3s ease 0s;
 	}
 
 	.header__menu.active {
 		padding: 70px 10px 20px 10px;
-		top: 30px;
+		transform: translateY(30px);
 	}
 
 	.menu__item {
@@ -197,20 +197,20 @@
 	.header__phones {
 		text-align: center;
 		position: fixed;
-		top: -100%;
+		transform: translateY(-100%);
 		left: 0;
+		display: block;
 		height: 100%;
 		width: 100%;
 		background-color: var(--dark-color);
 		z-index: 1;
-		transition: top 0.3s ease 0s;
+		transition: transform 0.3s ease;
 	}
 
 	.header__phones.active {
-		top: 0;
-		display: block;
+		transform: translateY(0);
 		padding-top: 70px;
-		transition: top 0.3s ease 0s;
+		transition: transform 0.3s ease;
 	}
 
 	.header__phones.active a {
