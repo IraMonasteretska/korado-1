@@ -324,10 +324,10 @@
 
 .header__burger.active:before {
     transform: rotate(45deg);
-    top: 9px;
+    top: 22px;
 }
 
 .header__burger.active span {
     transform: rotate(-45deg);
-    bottom: 9px;
+    top: 22px;
 }

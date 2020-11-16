@@ -62,6 +62,11 @@
 		z-index: 3;
 	}
 
+	.header__burger.active {
+		margin-top: 0;
+		height: 45px;
+	}
+
 	.header__burger.active:after {
 		transform: scale(0);
 	}
