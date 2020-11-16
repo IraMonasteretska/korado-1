@@ -74,6 +74,7 @@ $(document).ready(function(){
         $('.social__item').fadeToggle();
 		$('.social__close').toggle();
 		$('.social__message').toggle();
+		$('.social__circle').toggleClass('active');
 	});
 	
 	

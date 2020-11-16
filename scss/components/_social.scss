@@ -1,6 +1,7 @@
 .icon {
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .social {
@@ -8,10 +9,12 @@
     right: 0;
     width: 120px;
     bottom: 25px;
+
     &__item {
         display: none;
         text-align: center;
         margin-bottom: 8px;
+
         &--text {
             font-family: 'Akrobat', sans-serif;
             margin-top: 4px;
@@ -21,31 +24,110 @@
             color: #21222f;
         }
     }
-    &__circle {
+
+    &__circle.active {
         border-radius: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 60px;
         height: 60px;
-        margin: 0 auto;
+        margin: 0 auto 25px;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
+
     &__close {
         display: none;
-        
     }
+
     &__btn {
         text-align: center;
         margin-bottom: 17px;
-        cursor: pointer;
     }
-    &__img{
-        margin: 0 auto;
+
+    &__arrow {
+        text-align: center;
+        margin-bottom: 17px;
+    }
+
+    &__telegram {
+        circle {
+            fill: #0087D0;
+        }
+
+        &:hover circle {
+            fill: #0079BA;
+        }
+    }
+
+    &__whatsapp {
+        circle {
+            fill: #5fb34e;
+        }
+
+        &:hover circle {
+            fill: #57A547;
+        }
+    }
+
+    &__viber {
+        circle {
+            fill: #935bbe;
+        }
+
+        &:hover circle {
+            fill: #8b4cbb;
+        }
+    }
+
+    &__phone {
+        circle {
+            fill: #2a2b3a;
+        }
+
+        &:hover circle {
+            fill: #14141f;
+        }
+    }
+
+    &__phone {
+        circle {
+            fill: #2a2b3a;
+        }
+
+        &:hover circle {
+            fill: #14141f;
+        }
+    }
+
+    &__close {
+        path {
+            fill: #21222F;
+        }
+
+        circle {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        &:hover path {
+            fill: #5fb34e;
+        }
+    }
+
+    &__message {
+        circle {
+            fill: #2a2b3a;
+        }
+
+        &:hover circle {
+            fill: #14141f;
+        }
+    }
+
+    &__up {
+        circle {
+            fill: #2a2b3a;
+        }
+
+        &:hover circle {
+            fill: #14141f;
+        }
     }
 }
-
-
-
-
-    
